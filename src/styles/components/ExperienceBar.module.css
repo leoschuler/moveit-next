@@ -1,0 +1,40 @@
+
+
+.experienceBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom:2.5rem;
+}
+
+
+.experienceBar > div  {
+    flex:1;
+    height:4px;
+    border-radius: 4px;
+    background: var(--gray-line);    
+    margin: 0px 1.5rem;
+    position: relative;
+}
+
+.experienceBar > div > div {
+    height:4px;
+    border-radius: 4px;
+    background-color: var(--green);
+ }
+
+ .currentExperience {
+     position:absolute;
+     top:1rem;
+     transform: translateX(-50%);
+ }
+
+ .currentExperience::before {
+    display: block;
+    content: "^";
+    position: absolute;   
+    top: -1.5ex;
+    left: 50%;
+    transform: translateX(-50%);
+ }

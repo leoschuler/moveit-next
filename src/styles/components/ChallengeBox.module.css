@@ -1,0 +1,73 @@
+
+
+.ChallengeBoxContainer {
+    border-radius: 5px;
+    background-color: var(--white);
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly ;
+    align-content: center;
+    align-items: center;
+    padding:1.5rem;
+    box-shadow: 0 0 60px rgba(0,0,0, 0.05);
+}
+.mainContent {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ChallengeBoxContainer header {
+    color:var(--blue);
+    font-weight: 600;
+    font-size:1.25rem;
+    padding-bottom:1.4rem;
+    border-bottom:1px solid var(--gray-line); 
+    align-self: stretch;
+    text-align:center;
+}
+
+.ChallengeBoxContainer footer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+    align-self: stretch;
+}
+
+.ChallengeBoxContainer footer button {
+    height:3rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    border-radius:5px;
+    color:white;
+    transition:filter 2ms;
+}
+.ChallengeBoxContainer footer button:hover {
+    filter:brightness(0.9);
+}
+.challengeFailedButton {background-color: var(--red);}
+.challengeSucceededButton {background-color: var(--green);}
+
+.ChallengeBoxContainer h1 {
+    text-align:center;
+    font-size:1.7rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 2rem;
+    color:var(--title);
+}
+.levelUp, .mainContent p {
+    text-align:center;
+    line-height:1.4;
+    margin:2rem;
+}
+.levelUp img, .mainContent h1 img {
+    /*height:4rem;*/
+    display:block;
+    margin:0.5rem auto;
+    vertical-align:middle;
+}
+
